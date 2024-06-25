@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./responsividade.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <section id="cabecalho">
+                <div>
+                    <img id="logo" src="https://raw.githubusercontent.com/pfFabio/P1-prog_web/main/assets/logo2.png" alt="logo">
+                </div >
+                <div style="width: 90%; background-color: bisque; border: 2px black solid; text-align: center; margin-left: 5%;">
+                    Empresa do Fábio
+                </div>
+                <div id="hamburger">
+                    <img id="menu_hamburger" src="https://icon-library.com/images/three-bars-icon/three-bars-icon-28.jpg" style="height: 10vw; ">
+                </div>
+            </section>
+            <div id="menus">
+                <div id="menu">
+                    <a href="#sobre">SOBRE</a>
+                    <a href="#empresas">EMPRESAS</a>
+                    <a href="#candidato">CANDIDATO</a>
+                    <a href="#contato">CONTATO</a>
+                </div>
+            </div>
+        </header>
+        
+        <main>
+            <section id="sobre" class="conteudo">
+                IA automatiza a triagem de currículos, identifica candidatos qualificados e reduz vieses inconscientes, 
+                otimizando o processo de recrutamento e impulsionando a diversidade na sua empresa.
+            </section>
+            
+            <section class="carrossel" style="display: grid;">
+                
+                <div class="imagens">
+                    <img src="https://www.daisee.com/static/1f58326350a72558abaf9018ab7e0973/06655/ai-humans.jpg" alt="">
+                    <div class="texto"> Inteligência Artificial e Humana</div>
+                </div>
+            
+            <div class="imagens">
+                <img src="https://th.bing.com/th/id/R.de6e3c5138542c525eae45bf6c205ec9?rik=C%2fJzVTlYKjzJgQ&pid=ImgRaw&r=0" alt="">
+                <div class="texto"> O candidato certo pra vaga certa</div>
+            </div>
+            
+            <div class="imagens">
+                <img src="https://wallpaperaccess.com/full/2675411.jpg" alt="">
+                <div class="texto"> Velocidade e Atenção no atendimento</div>
+            </div>
+            
+            <div>
+                <a class="prev" onclick="defineimagens(-1)">&#10094;</a>
+                <a class="next" onclick="defineimagens(1)">&#10095;</a>
+            </div>
+            
+        </section>
+
+        <section id="colunas">
+            <div class="conteudo" style="display:block;height: 100%;">
+                <h1>Reduzir vieses inconscientes:</h1>
+                <p>
+                    a IA garante um processo de seleção imparcial e livre de preconceitos, garantindo que você encontre os melhores candidatos, independentemente de gênero, raça ou origem.    
+                </p>
+            </div>
+            <div class="conteudo" style="display:block;height: 100%;">
+                <h1>Melhorar a experiência do candidato: </h1>
+                <p>
+                    um processo mais rápido e eficiente significa que os candidatos recebem um feedback mais rápido e uma melhor experiência geral.
+                </p>
+            </div>
+            <div class="conteudo" style="display:block;height: 100%;">
+                <h1>Automatizar a triagem inicial de currículos:</h1>
+                <p>
+                    economize tempo e elimine tarefas repetitivas, permitindo que seus recrutadores se concentrem em entrevistas e avaliações mais profundas.
+                </p>
+            </div>
+        </section>
+
+
+        <section id="empresas" class="conteudo">
+            <div>
+                <p>Se você é um representante de uma empresa em busca de talentos, estamos aqui para facilitar seu processo de
+                    recrutamento. Comece preenchendo nosso formulário inicial localizado ao lado para se cadastrar.</p>
+                <p>Logo após o preenchimento do formulário, nossa equipe entrará em contato com você para uma discussão mais 
+                    aprofundada e para entender melhor seus requisitos. Este diálogo nos permite garantir que estamos alinhados com 
+                    suas expectativas e que podemos fornecer o serviço mais eficaz possível.</p>
+                <p>Uma vez que tenhamos uma compreensão clara de suas necessidades, teremos o prazer de fornecer uma seleção 
+                    cuidadosamente curada dos currículos mais qualificados. Estes currículos serão selecionados com base em 
+                    sua relevância para a vaga que você está anunciando, garantindo que você receba apenas candidatos que estejam 
+                    perfeitamente alinhados com as exigências da posição.</p>
+                <p>Estamos ansiosos para trabalhar com você e ajudar sua empresa a encontrar os talentos que ela precisa 
+                    para prosperar. Juntos, podemos construir uma parceria de sucesso.</p>
+            </div>
+            <form autocomplete="off">
+                <label for="empresa" >Empresa:</label><br>
+                <input type="text" id="empresa" name="empresa" required><br>
+                <label for="representante" >Representante:</label><br>
+                <input type="text" id="representante" name="representante" ><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="telefone">Telefone:</label><br>
+                <input type="tel" id="telefone" name="telefone" required><br>
+                <label for="endereço">Endereço:</label><br>
+                <input type="text" id="endereço" name="endereço" required><br><br>
+                <input type="submit" value="Cadastrar">
+            </form>
+        </section>
+        
+        <section id="candidato" class="conteudo">
+            <form autocomplete="off">
+                <label for="nome" >Nome:</label><br>
+                <input type="text" id="nome" name="nome" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="telefone">Telefone:</label><br>
+                <input type="tel" id="telefone" name="telefone" required><br>
+                <label for="endereço">Endereço:</label><br>
+                <input type="text" id="endereço" name="endereço" required><br><br>
+                <input type="submit" value="Cadastrar">
+            </form><br>
+            <div style="margin-left: 15px;">
+                    <p>Se você está em busca de uma oportunidade de emprego, nós estamos aqui para ajudá-lo. O primeiro passo é simples: 
+                    basta preencher nosso formulário inicial. Este é um processo rápido e fácil que nos permite entender melhor suas habilidades, 
+                    experiências e interesses.</p>
+                    <p>Após o preenchimento do formulário, nossa equipe entrará em contato com você para completar seu cadastro. Este é um passo 
+                    crucial, pois nos permite coletar informações adicionais que podem ser vitais para sua busca de emprego. Queremos garantir que 
+                    temos uma imagem completa de suas qualificações e aspirações de carreira.</p>
+                    <p>Uma vez que seu cadastro esteja completo, seu perfil será visível para uma ampla gama de empresas. 
+                    Estas são empresas que estão ativamente recrutando e em busca de talentos como você. Seu perfil será uma ferramenta 
+                    valiosa para essas empresas, permitindo-lhes identificar rapidamente se suas habilidades e experiências são um bom ajuste 
+                    para as vagas que estão oferecendo.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div id="contato">
+            <div>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/fabiopfigueiredo/"><img src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG8.png" alt="" class="icone"></a>
+                        <span class="tooltiptext">Linkedin</span>
+                </div>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/fabiopfigueiredo/"><img src="https://th.bing.com/th/id/R.2bad70f2d08429a28dfbebd4c237924b?rik=vgEdhJ%2f%2biiEnQQ&riu=http%3a%2f%2fpngimg.com%2fuploads%2ffacebook_logos%2ffacebook_logos_PNG19748.png&ehk=0ZiZ04ZZ6mSJ5oyPxBh1gy4FSYhegWTWyDpCiI73sbw%3d&risl=&pid=ImgRaw&r=0" alt="" class="icone"></a>
+                        <span class="tooltiptext">Facebook</span>
+                </div>
+            </div>
+            <div>
+                Tel: (69) 96969-4213<br>
+                Email: trabalho_AI@univassouras.br<br>
+                Endereço: rua totalmentereal nº 0, maricá<br>
+            </div>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
